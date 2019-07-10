@@ -19,3 +19,10 @@
   <%= submit_tag "Search" %>
   <% end %>
 </p>
+<p>
+  <%= form_tag('/movies', :method => :get) do %>
+  <%= label_tag(:q, "Movies Search:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag "Search" %>
+  <% end %>
+</p>
