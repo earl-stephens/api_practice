@@ -15,7 +15,7 @@ And fill in the 'Lord of the Rings quotes Search' box
 With movie id '5cd95395de30eff6ebccde5b',
 And click on 'Search',
 Then I should be on page '/quotes'.
-I should see a total number of quotes (xxxx)
+I should see a total number of quotes (1010)
 Returned by the search.
 Then I should see a list of the first 10 quotes
 And for each quote I should see:
