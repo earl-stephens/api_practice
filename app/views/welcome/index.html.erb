@@ -1,28 +1,28 @@
 <p>
-  <%= form_tag('/lotr', :method => :get) do %>
-  <%= label_tag(:q, "Lord of the Rings quotes Search:") %>
-  <%= text_field_tag(:q) %>
+  <%= form_tag('/quotes', :method => :get) do %>
+  <%= label_tag(:q_lotr, "Lord of the Rings quotes Search:") %>
+  <%= text_field_tag(:q_lotr) %>
   <%= submit_tag "Search" %>
   <% end %>
 </p>
 <p>
   <%= form_tag('/park', :method => :get) do %>
-  <%= label_tag(:q, "National Park Service Search:") %>
-  <%= text_field_tag(:q) %>
+  <%= label_tag(:q_nps, "National Park Service Search:") %>
+  <%= text_field_tag(:q_nps) %>
   <%= submit_tag "Search" %>
   <% end %>
 </p>
 <p>
   <%= form_tag('/ships', :method => :get) do %>
-  <%= label_tag(:q, "Star Wars Search:") %>
-  <%= text_field_tag(:q) %>
+  <%= label_tag(:q_sw, "Star Wars Search:") %>
+  <%= text_field_tag(:q_sw) %>
   <%= submit_tag "Search" %>
   <% end %>
 </p>
 <p>
   <%= form_tag('/movies', :method => :get) do %>
-  <%= label_tag(:q, "Movies Search:") %>
-  <%= text_field_tag(:q) %>
+  <%= label_tag(:q_movies, "Movies Search:") %>
+  <%= text_field_tag(:q_movies) %>
   <%= submit_tag "Search" %>
   <% end %>
 </p>
