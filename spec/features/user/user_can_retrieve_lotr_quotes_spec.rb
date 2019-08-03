@@ -10,22 +10,14 @@ RSpec.describe "As a user" do
 
       expect(current_path).to eq('/quotes')
       expect(page).to have_content('1010 results')
-      expect(page).to have_content('First 10 results')
+      expect(page).to have_content('First 10 results:')
+
+      within "#quote-5cd96e05de30eff6ebcce9b8" do
+        expect(page).to have_content("ID: 5cd96e05de30eff6ebcce9b8")
+        expect(page).to have_content("Sauron's wrath will be terrible, his retribution swift.")
+        expect(page).to have_content("Movie ID: 5cd95395de30eff6ebccde5b")
+        expect(page).to have_content("Character ID: 5cd99d4bde30eff6ebccfea0")
+      end
     end
   end
 end
-
-# As a user
-# When I visit '/'
-# And fill in the 'Lord of the Rings quotes Search' box
-# With movie id '5cd95395de30eff6ebccde5b',
-# And click on 'Search',
-# Then I should be on page '/quotes'.
-# I should see a total number of quotes (1010)
-# Returned by the search.
-# Then I should see a list of the first 10 quotes
-# And for each quote I should see:
-# -quote id
-# -dialog
-# -movie id
-# -character id

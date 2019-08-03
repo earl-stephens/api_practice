@@ -1,1 +1,16 @@
 <!-- app/views/quotes/index.html.erb -->
+
+<h1>Lord of The Rings Quote Search</h1>
+<h3><%= @lotr_result.search_results_count %> results</h3>
+
+<h3>First <%= @lotr_result.ten_search_results.count %> results:</h3>
+
+  <% @lotr_result.ten_search_results.each do |result| %>
+    <ul id="quote-<%= result.id %>">
+      <li>Quote ID: <%= result.id %></li>
+      <li>Dialogue: "<%= result.dialogue %>"</li>
+      <li>Movie ID: <%= result.movie %></li>
+      <li>Character ID: <%= result.character %></li>
+    </ul>
+  <% end %>
+</ul>
