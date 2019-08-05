@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get '/quotes', to: 'quotes#index'
-
+  get '/parks', to: 'parks#index'
 
 end

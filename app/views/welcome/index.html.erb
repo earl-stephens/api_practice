@@ -6,10 +6,10 @@
   <% end %>
 </p>
 <p>
-  <%= form_tag('/park', :method => :get) do %>
+  <%= form_tag('/parks', :method => :get) do %>
   <%= label_tag(:q_nps, "National Park Service Search:") %>
   <%= text_field_tag(:q_nps) %>
-  <%= submit_tag "Search" %>
+  <%= submit_tag "NP Search" %>
   <% end %>
 </p>
 <p>
